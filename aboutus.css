@@ -1,0 +1,114 @@
+body {
+    background-color: #000000;
+    font-family: "Raleway", "Montserrat", sans-serif;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.imprint-header {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.myLogo {
+    width: 65px;
+    height: 50px;
+    margin-right: 25px;
+}
+
+.imprint-header h2 {
+    color: white;
+    margin-left: 25px;
+}
+
+.about-body-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    border: solid #FFCC04;
+    border-width: thin;
+    border-radius: 25px;
+    padding: 40px 50px 30px; /* Adjusted padding */
+    width: auto;
+}
+
+/* Adjusting the size of person boxes for the first row */
+.person-box {
+    border: solid #AE83E8;
+    border-radius: 18px;
+    width: calc(33.33% - 50px); /* 3 boxes on the first row */
+    height: 380px;
+    padding: 10px;
+    border-width: thin;
+}
+
+.person-box img{
+    height: 280px;
+    width: 310px;
+}
+
+/* For the imprint text box */
+.imprint-text {
+    color: white;
+    width: calc(50% - 22px); /* Width for the text box */
+    margin: 20px auto; /* Centering the text box and adding space from person box */
+    border: solid #FFCC04;
+    border-radius: 18px;
+    border-width: thin;
+    padding: 20px; /* Adding padding for better readability */
+}
+
+/* Adjusting the last person box */
+.about-body-container > .person-box:nth-child(4) {
+    
+    margin-top: 20px; /* Adding space from the above boxes */
+}
+
+/* Ensuring the imprint text and the last person box are displayed properly on the second row */
+.about-body-container > .imprint-text {
+    flex-basis: calc(50% - 22px); /* Occupying 50% of the second row */
+    margin-top: 20px; /* Adding space above */
+}
+
+/* Adjusting the layout for the fourth person box */
+.about-body-container > .person-box:nth-child(4) {
+    flex-basis: calc(33.33% - 22px); /* Width for the last box */
+    margin-top: 20px; /* Adding space from the above boxes */
+}
+
+/* Footer styles */
+.myFooter {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #AE83E8;
+    border-radius: 12px;
+    background-color: #000; /* Added background color to footer */
+}
+
+footer p {
+    margin: 3px;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}

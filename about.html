@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutus.css">
+    <title>About Us</title>
+    
+    <!-- Add these script tags for jQuery and jQuery UI -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+    <div class="about-container">
+
+        <header class="imprint-header">
+            <a href="index.html">
+                <img src="./images/Logo.jpg" alt="logoHere" class="myLogo">
+            </a>
+            <h2 class="imprintTitle">Imprint Page</h2>
+            <label for="search">Search: </label>
+            <input id="search" type="text" placeholder="Start typing...">
+        </header>
+
+        <div class="about-body-container">
+            <div class="person-box">
+                <img src="./images/Logo.jpg" alt="Davit Pheikrishvili">
+                <p class="person-name">Davit Pheikrishvili</p>
+                <p class="person-email">dpheikrishvili@constructor.university</p>
+            </div>
+
+            <div class="person-box">
+                <img src="./images/Logo.jpg" alt="Giorgi Ambokadze">
+                <p class="person-name">Giorgi Ambokadze</p>
+                <p class="person-email">gambokadze@constructor.university</p>
+            </div>
+
+            <div class="person-box">
+                <img src="./images/Logo.jpg" alt="Ana Naveriani">
+                <p class="person-name">Ana Naveriani</p>
+                <p class="person-email">anaveriani@constructor.university</p>
+            </div>
+
+            <div class="person-box">
+                <img src="./images/Logo.jpg" alt="Alexandre Kutateladze">
+                <p class="person-name">Alexandre Kutateladze</p>
+                <p class="person-email">akutateladze@constructor.university</p>
+            </div>
+
+            <div class="imprint-text">
+                <p>
+                    This website is student lab work and does not necessarily reflect Constructor University opinions. 
+                    Constructor University does not endorse this site, nor is it checked by Constructor University 
+                    regularly, nor is it part of the official Constructor University web presence. 
+                    For each external link existing on this website, we initially have checked that the target page 
+                    does not contain contents which is illegal wrt. German jurisdiction. However, as we have no influence 
+                    on such contents, this may change without our notice. Therefore we deny any responsibility for the 
+                    websites referenced through our external links from here. 
+                    No information conflicting with GDPR is stored in the server.
+                </p>
+            </div>
+        </div>
+       
+    </div>
+
+    <footer class="myFooter">
+        <p>Bla bla bla bla bla bla</p>
+        <p><a href="mailto:QRgallery@gmail.com">QRgallery@gmail.com</a></p>
+        <p><a href="https://something.com">something.com</a></p>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            // Step 1: Gather data from the page content
+            let items = [];
+    
+            // Select all elements containing names and emails
+            $(".person-name, .person-email").each(function() {
+                items.push($(this).text().trim()); // Add full names and emails as items
+            });
+    
+            // Step 2: Split the imprint text into individual words
+            let imprintText = $(".imprint-text").text().trim(); // Get the full text content
+            let words = imprintText.split(/\s+/); // Split by any whitespace (space, newline, etc.)
+            
+            // Add each word to the items array
+            items = items.concat(words);
+
+            items = Array.from(new Set(items));
+    
+            // Step 3: Initialize autocomplete with the collected data
+            $("#search").autocomplete({
+                source: items // Use the collected items as the source
+            });
+        });
+    </script>
+    
+</body>
+</html>

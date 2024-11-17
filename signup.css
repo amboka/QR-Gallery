@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    background-color: #000000;
+    font-family: "Raleway", "Montserrat";
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Container for the form and error section */
+.upper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.left-container {   
+    flex-grow: 2;
+}
+
+.form-container {
+    
+    padding: 50px; /* Adjusted to prevent excessive padding */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"]
+{
+    width: 100%;
+    padding: 15px;
+    background-color: #1C1C1C;
+    border: 2px solid rgba(128, 0, 255, 0.5); /* Purple border */
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+select:disabled, 
+select::placeholder {
+    color: #999;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: yellow;
+}
+
+label {
+    color: yellow;
+}
+
+.signup {
+    width: 100%;
+    padding: 15px;
+    background-color: #6e00ff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup:hover {
+    background-color: #5900cc;
+}
+
+.signin {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.signin a {
+    color: #6e00ff;
+    text-decoration: none;
+}
+
+/* Error container */
+.error-container {
+    margin-top: 60px;
+    width: 350px;
+    height: 175px;
+    border: 2px solid rgba(255, 255, 0, 0.5); /* Yellow border */
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    text-align: center;
+    padding-bottom: 30px;   
+}
+
+/* Footer styling */
+.signup-footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1C1C1C;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 0, 255, 0.5);
+}
+
+.footer-container p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.right-container {
+    flex-grow: 1;
+    margin-left: 100px;
+    align-self: flex-start;
+}
+
+.error-container p {
+    margin-bottom: 20px;
+}
+
+.camera-icon {
+    width: 65px;
+    height: 50px;
+}
+
+.person-name {
+    margin-top: 6px;
+    color: white;
+}
+
+.person-email {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.person-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imprint-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    color: rgba(255, 255, 255, 0.705);
+}
+
+
+
+  
+select {
+    width: 100%;
+    padding: 15px;
+    background-color: #1C1C1C;
+    border: 2px solid rgba(128, 0, 255, 0.5); /* Purple border */
+    border-radius: 10px;
+    color: #999;
+    font-size: 16px;
+    outline: none;
+  }
+
+
+/* footer stuff */
+
+.myFooter {
+    clear:both;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #AE83E8;
+    border-radius: 12px;
+   
+  }
+  
+  .signup-footer .myFooter p {
+    margin: 3px;
+    color:#fff;
+    font-size: 12px;
+  }
+
+  a{
+    color: white;
+  }
+
+
+
+
+ 

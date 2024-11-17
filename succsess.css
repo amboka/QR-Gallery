@@ -1,0 +1,42 @@
+body {
+    font-family: "Raleway", "Montserrat";
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.camera-icon {
+    width: 65px;
+    height: 50px;
+    background-color: black;
+}
+.container {
+    background-color: black;
+    padding: 20px;
+    border: 3px solid rgba(128, 0, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+}
+h1 {
+    color: #b18bfa;;
+}
+p {
+    color: #FFCC04;
+}
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color:  #b18bfa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid rgba(128, 0, 255, 0.5);
+}
+a:hover {
+    background-color:  #b18bfa;
+   
+}
