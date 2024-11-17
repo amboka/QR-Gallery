@@ -1,0 +1,74 @@
+body {
+    font-family: "Raleway", "Montserrat";
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Wrapper for the form and footer */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: black;
+    padding: 20px;
+    border: 1px solid #FFCC04;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontal centering */
+    justify-content: center; /* Vertical centering */
+    margin-top: 10px;
+}
+
+h1 {
+    color: #b18bfa;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    width: 100%; /* Ensures the input takes full width of container */
+}
+
+
+.myFooter {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 1px solid #AE83E8;
+    border-radius: 12px;
+    background-color: black;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.myFooter p {
+    margin: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+li {
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;;
+}
+img{
+    padding: 5px;
+    height: 200px;
+    width: 300px;
+    border: 1px solid  #AE83E8;
+    border-radius: 5px;
+}
+a{
+    color: #fff;
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    background-color: #000000;
+    font-family: "Raleway", "Montserrat";
+}
+
+
+.upperContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.sign-in-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.camera-icon {
+    width: 65px;
+    height: 50px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #1C1C1C;
+    padding: 40px;
+    width: 400px;
+    margin: auto; /* Center body horizontally */
+    margin-bottom: 11.5%;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(128, 0, 255, 0.5);
+}
+
+.form-container h1 {
+    font-size: 28px;
+    color: #b18bfa;
+    margin-bottom: 25px;
+}
+
+.form-container li {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 25px;
+    list-style-type: none;
+}
+
+
+
+.myFooter {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #AE83E8;
+    border-radius: 12px;
+}
+
+footer p {
+    margin: 3px;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+

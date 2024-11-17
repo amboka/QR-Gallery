@@ -1,0 +1,101 @@
+body {
+    font-family: "Raleway", "Montserrat";
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Wrapper for the form and footer */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: black;
+    padding: 20px;
+    border: 1px solid #FFCC04;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontal centering */
+    justify-content: center; /* Vertical centering */
+}
+
+h1 {
+    color: #b18bfa;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    width: 100%; /* Ensures the input takes full width of container */
+}
+
+input[type="text"] {
+    width: 100%; /* Make the input fill its parent */
+    padding: 15px;
+    background-color: #1C1C1C;
+    border: 2px solid rgba(128, 0, 255, 0.5); /* Purple border */
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+input::placeholder {
+    color: #999;
+}
+
+.signup {
+    height: 40px;
+    width: 100px; /* Adjusted width for better appearance */
+    padding: 0;
+    margin-top: 10px;
+    background-color: #6e00ff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    /* Center the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myFooter {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 1px solid #AE83E8;
+    border-radius: 12px;
+    background-color: black;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.myFooter p {
+    margin: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b18bfa;
+}
